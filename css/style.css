@@ -15,6 +15,7 @@ h5{
     background-image: url("../images/newhero.jpg");
     background-position: center;
     background-size: cover;
+    filter: drop-shadow(23px);
 }
 .navbar{
     display: flex;
@@ -24,8 +25,14 @@ h5{
 .navbar-brand{
     margin-left: 40px;
     padding-top: 7px;
-    color: red;
+    color: white;
     font-family: papyrus;
+    font-size: 2rem;
+    transition: all ease .5s;
+}
+.navbar-brand:hover{
+    color: red;
+    cursor: pointer;
 }
 .navbar-links ul{
     display: flex;
@@ -43,6 +50,9 @@ h5{
     font-size: 20px;
     color: white;
     transition: all ease .5s;
+}
+.navbar-links li a:hover{
+    color: red;
 }
 .toggle-button{
     position: absolute;
